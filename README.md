@@ -43,7 +43,7 @@ $data = $client->getQuotes("YHOO"); //Single stock
 $data = $client->getQuotes(array("YHOO", "GOOG")); //Multiple stocks at once
 
 //Get historical data
-$data = $client->getHistoricalData("YHOO");
+$data = $client->getHistoricalData("YHOO", $startDate, $endDate);
 
 //Search stocks
 $data = $client->search("Yahoo");
